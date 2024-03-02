@@ -1,0 +1,11 @@
+[alias]
+    ci = commit -a
+    st = status
+    co = checkout
+    br = branch
+    tr = log --graph --pretty='format:%C(yellow)%h%Creset %C(magenta)%cd%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+    tr-all = log --graph --pretty='format:%C(yellow)%h%Creset %C(magenta)%cd%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset' --all
+    to = log --oneline
+[user]
+    name = ""
+    email = ""
