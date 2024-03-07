@@ -313,7 +313,12 @@ alias v='vim'
 alias jutf='export LANG=ja_JP.UTF-8'
 alias jeuc='export LANG=ja_JP.euc-jp'
 alias t='tmux'
-alias rel='source ~/.profile'
+if [ -f ~/.profile ]; then
+    alias rel='source ~/.profile'
+fi
+if [ -f ~/.bash_profile ]; then
+    alias rel='source ~/.bash_profile'
+fi
 alias cdd='cd ~/dotfiles'
 alias sc='systemctl'
 alias sul='sudo -i'
@@ -330,15 +335,15 @@ export EDITOR="vim"
 ### Prompt ###
 ##############
 
-#Ubuntu22 org
+# Ubuntu22
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-PS1="${PROMPT_COLOR}[\u@\h:\w]${Color_Off}\$(init_prompt_git_branch)\$(__show_status)\n\$ "
+# PS1="${PROMPT_COLOR}[\u@\h:\w]${Color_Off}\$(init_prompt_git_branch)\$(__show_status)\n\$ "
 # PS1="${PROMPT_COLOR}[\u@\h:\w]${Color_Off}\$(init_prompt_git_branch)\$(__show_status)\$(prompt_right_aligned)$(colorize_by_host)\D{%FT%T}${Color_Off}\n\$ "
 
 # starship
 # curl -sS https://starship.rs/install.sh | sh
-export STARSHIP_CONFIG=~/starship.toml
+export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init bash)"
 
 ##########################
