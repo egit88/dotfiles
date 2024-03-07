@@ -110,7 +110,7 @@ disabled = false
 [localip]
 ssh_only = true
 format = '@[$localipv4](bold red) '
-disabled = false
+disabled = true
 
 [php]
 format = 'via [🔹 $version](147 bold) '
