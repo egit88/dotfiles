@@ -181,6 +181,10 @@ symbol = " "
 
 [memory_usage]
 symbol = " "
+disabled = false
+threshold = -1
+# symbol = ' '
+style = 'bold dimmed green'
 
 [meson]
 symbol = "喝 "
@@ -252,5 +256,4 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
-
 
