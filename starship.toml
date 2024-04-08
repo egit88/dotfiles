@@ -1,7 +1,7 @@
 # ~/.config/starship.toml
 # ~/starship.toml
 
-add_newline=true
+add_newline=false
 
 format = """
 $username\
@@ -98,13 +98,13 @@ vicmd_symbol = '[V](bold green) '
 [directory]
 truncation_length = 8
 # truncation_symbol = '…/'
-read_only = " "
+# read_only = " "
 
 [hostname]
 ssh_only = false
 # format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
 format = '[$ssh_symbol](bold blue)[$hostname](bold red) '
-trim_at = '.grtt.co.jp'
+trim_at = '.example.com'
 disabled = false
 
 [localip]
@@ -114,6 +114,7 @@ disabled = true
 
 [php]
 format = 'via [🔹 $version](147 bold) '
+disabled = true
 
 [username]
 style_user = 'white bold'
@@ -180,7 +181,7 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 disabled = false
 threshold = -1
 # symbol = ' '

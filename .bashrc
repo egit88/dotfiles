@@ -346,6 +346,10 @@ export EDITOR="vim"
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init bash)"
 
+# Deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 ##########################
 ## load local settings ###
 ##########################
